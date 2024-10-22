@@ -18,7 +18,7 @@ async def handle_client(websocket, path):
         print("Client disconnected")
 
 # Start WebSocket server
-start_server = websockets.serve(handle_client, "0.0.0.0", 8765)
+start_server = websockets.serve(handle_client, "localhost", 3000)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()

@@ -2,7 +2,7 @@
 // Author: Bhojan Anand, NUS SoC
 
 let audioContext = new (window.AudioContext || window.webkitAudioContext)();
-let socket = new WebSocket("ws://your-server-ip:8765");
+let socket = new WebSocket("ws://localhost:3000");
 
 // Capture microphone input
 navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
